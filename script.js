@@ -46,6 +46,7 @@ const hardAlgorithm= new Effect(' Hard Algorithm',2,"increase target's resilienc
 const unhandlePromise= new Effect(' Unhandled Promise Rejection',1,"reduce target's resilience by 2",'resilience', -2);
 const pairProgramming= new Effect(' Pair Programming',3,"increase target's power by 2",'power', 2);
 
-redBeltNinja.attack(blackBeltNinja).attack(blackBeltNinja).attack(blackBeltNinja);
 
-hardAlgorithm.play(pairProgramming);
+hardAlgorithm.play(redBeltNinja);
+pairProgramming.play(redBeltNinja);
+redBeltNinja.attack(blackBeltNinja);
